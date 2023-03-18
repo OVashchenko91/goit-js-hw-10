@@ -2,8 +2,19 @@
 
 import './css/styles.css';
 import debounce from 'lodash.debounce';
-import { Notify } from 'notiflix';
-import { fetchCountries } from './fetch-countries';
+
+import { fetchCountries } from './fetchCountries';
+
+// all modules
+import Notiflix from 'notiflix';
+
+// one by one
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Report } from 'notiflix/build/notiflix-report-aio';
+import { Confirm } from 'notiflix/build/notiflix-confirm-aio';
+import { Loading } from 'notiflix/build/notiflix-loading-aio';
+import { Block } from 'notiflix/build/notiflix-block-aio';
+
 
 const DEBOUNCE_DELAY = 300;
 
