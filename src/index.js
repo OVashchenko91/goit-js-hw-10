@@ -18,7 +18,7 @@ import { Block } from 'notiflix/build/notiflix-block-aio';
 
 const DEBOUNCE_DELAY = 300;//використовується у функціях debounce для підтримки виконання функцій
 
-const refs = { //оголошення посилання на об’єкт, яке містить посилання на елементи на сторінці, і створення змінних, які містять посилання на відповідні елементи
+const refs = {//оголошення посилання на об’єкт, яке містить посилання на елементи на сторінці, і створення змінних, які містять посилання на відповідні елементи
   searchBox: document.querySelector('input#search-box'),
   countryList: document.querySelector('ul.country-list'),
   countryInfo: document.querySelector('div.country-info'),
@@ -48,7 +48,7 @@ const createOneCountryMarkup = ([country]) => { //створює розмітк�
             <img class="country-info__image" src="${flags.svg}" alt="${
     name.official
   }" width="80">
-            <span class="country-info__name">${name.official}</span>
+            <h1 class="country-info__name">${name.official}</h1>
           </div>
           <ul class="list">
             <li class="country-info__feature">
