@@ -29,3 +29,11 @@ body {
     font-size: 18px;
     font-weight: 500;
 }
+ul {
+list-style: none;
+}
+
+li {
+font-size: 18px;
+font-weight: 500;
+}
