@@ -1,7 +1,7 @@
 const BASE_URL = 'https://restcountries.com/v3.1/name';
-const REQUIRED_FIELDS = ['name', 'capital', 'population', 'flags', 'languages'];
+const REQUIRED_FIELDS = ['name', 'capital', 'population', 'flags', 'languages']; //масив полів, які повинні бути включені в API відповіді
 
-export const fetchCountries = async name => {
+export const fetchCountries = async name => { //приймає назву країни в якості аргументу, і повертає Promise
   const response = await fetch(
     `${BASE_URL}/${name}?fields=${REQUIRED_FIELDS.join()}`
   );
